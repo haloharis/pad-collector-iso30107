@@ -4,6 +4,7 @@ import { router, useLocalSearchParams } from 'expo-router';
 import { useVideoPlayer, VideoView } from 'expo-video';
 import { randomUUID } from 'expo-crypto';
 import { buildCameraCaptureMeta } from '../lib/captureMeta';
+import { getSessionId } from '../lib/session';
 import { saveCaptureMetaSidecar, saveVideoToPrivateStorage, sha256OfFile } from '../lib/videoStorage';
 
 // Categories that are attacks on a real face show the "is this your own face" checkbox (SPEC section 3).
@@ -44,6 +45,7 @@ export default function ReviewScreen() {
       const meta = buildCameraCaptureMeta(video, params.facing === 'back' ? 'back' : 'front');
       saveCaptureMetaSidecar(id, {
         id,
+        session_id: getSessionId(),
         contributor_category: params.category,
         face_is_own: params.category === REAL_FACE_CATEGORY ? null : faceIsOwn,
         sha256,

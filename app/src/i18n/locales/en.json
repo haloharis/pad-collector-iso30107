@@ -1,0 +1,4 @@
+{
+  "app": { "name": "PAD Collector" },
+  "common": { "retry": "Try again", "loading": "Loading…" }
+}

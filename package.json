@@ -1,0 +1,12 @@
+{
+  "name": "pad-collector-iso30107",
+  "private": true,
+  "scripts": {
+    "gen:seed": "node supabase/scripts/gen-seed.mjs",
+    "test:rls": "node --env-file=.env --test supabase/tests/rls.test.mjs"
+  },
+  "devDependencies": {
+    "@supabase/supabase-js": "^2.116.0",
+    "supabase": "^2.117.0"
+  }
+}

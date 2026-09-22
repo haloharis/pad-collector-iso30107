@@ -1,0 +1,181 @@
+{
+  "_note": "Draft copy. Edit wording to match your recording protocol. 'final_keys' are the labels YOU assign in the web app; contributors only pick one 'key' (a coarser, easier-to-tell-apart card). Category key 'silicone_mask' intentionally maps to final key 'silicon_mask'. Summaries: 12 words max. 'confused_with' pairs are symmetrical.",
+  "taxonomy_version": 1,
+  "final_taxonomy": [
+    "real", "print", "mask_2d", "paper_mask", "mask_cylinder", "wrapped",
+    "mask_3d", "replay_phone", "replay_monitor", "latex_mask", "silicon_mask"
+  ],
+  "groups": [
+    { "key": "real", "name": "Real face", "sort": 1 },
+    { "key": "printed", "name": "Printed photos", "sort": 2 },
+    { "key": "screen", "name": "Screens", "sort": 3 },
+    { "key": "mask", "name": "Masks", "sort": 4 }
+  ],
+  "categories": [
+    {
+      "key": "live_person",
+      "group": "real",
+      "sort": 1,
+      "name": "Live person",
+      "summary": "Just you, live, in front of the camera.",
+      "final_keys": ["real"],
+      "availability": "everyone",
+      "needs": ["Good lighting"],
+      "steps": [
+        "Hold the phone at arm's length with your face in the oval.",
+        "Look at the camera and blink naturally.",
+        "Stay in frame for the whole recording."
+      ],
+      "dos": ["Try different rooms and lighting", "Glasses on or off is fine"],
+      "donts": ["No beauty filters", "Don't cover your face"],
+      "confused_with": []
+    },
+    {
+      "key": "printed_photo",
+      "group": "printed",
+      "sort": 2,
+      "name": "Printed photo",
+      "summary": "A flat printed photo of a face, held up to the camera.",
+      "final_keys": ["print", "mask_2d"],
+      "availability": "needs_props",
+      "needs": ["A printed photo of a face (paper)"],
+      "steps": [
+        "Hold the printout in front of the camera.",
+        "Fill the oval with the face in the photo.",
+        "Tilt it slightly and keep it steady."
+      ],
+      "dos": ["Use a clear, well-printed photo", "Keep the photo flat"],
+      "donts": ["Don't bend the paper", "Don't show a photo on a screen (that's a different card)"],
+      "confused_with": ["cutout_mask", "curved_photo"]
+    },
+    {
+      "key": "cutout_mask",
+      "group": "printed",
+      "sort": 3,
+      "name": "Photo cut-out mask",
+      "summary": "A printed face cut out and worn like a mask.",
+      "final_keys": ["paper_mask"],
+      "availability": "needs_props",
+      "needs": ["A printed face photo", "Scissors"],
+      "steps": [
+        "Cut out the printed face. Eye holes are optional.",
+        "Wear or hold it over your face.",
+        "Look at the camera and move slightly."
+      ],
+      "dos": ["Make the cut-out cover your whole face"],
+      "donts": ["Don't just hold a flat photo (that's Printed photo)"],
+      "confused_with": ["printed_photo", "cardboard_3d"]
+    },
+    {
+      "key": "curved_photo",
+      "group": "printed",
+      "sort": 4,
+      "name": "Curved printed photo",
+      "summary": "A printed face photo bent around a bottle, cylinder or head-shaped object.",
+      "final_keys": ["mask_cylinder", "wrapped"],
+      "availability": "needs_props",
+      "needs": ["A printed face photo", "A bottle, cylinder or similar object"],
+      "steps": [
+        "Wrap the photo around the object.",
+        "Hold it up so the face looks toward the camera.",
+        "Turn it slowly left and right."
+      ],
+      "dos": ["Keep the face visible and centered"],
+      "donts": ["Don't leave the photo flat"],
+      "confused_with": ["printed_photo"]
+    },
+    {
+      "key": "replay_phone",
+      "group": "screen",
+      "sort": 5,
+      "name": "Phone screen",
+      "summary": "A video or photo of a face shown on a phone screen.",
+      "final_keys": ["replay_phone"],
+      "availability": "needs_props",
+      "needs": ["A second phone", "A video or photo of a face"],
+      "steps": [
+        "Play the face video on the second phone at full brightness.",
+        "Hold it in front of the camera so the face fills the oval.",
+        "Keep both phones steady."
+      ],
+      "dos": ["Turn screen brightness up"],
+      "donts": ["Don't cover the screen with your hand"],
+      "confused_with": ["replay_monitor"]
+    },
+    {
+      "key": "replay_monitor",
+      "group": "screen",
+      "sort": 6,
+      "name": "Computer screen",
+      "summary": "A face shown on a laptop or desktop monitor.",
+      "final_keys": ["replay_monitor"],
+      "availability": "needs_props",
+      "needs": ["A laptop or monitor", "A video or photo of a face"],
+      "steps": [
+        "Show the face full-screen on the computer.",
+        "Point the camera at the screen from about arm's length.",
+        "Avoid glare and keep steady."
+      ],
+      "dos": ["Fill the oval with the face on screen"],
+      "donts": ["Don't show yourself live on the screen"],
+      "confused_with": ["replay_phone"]
+    },
+    {
+      "key": "cardboard_3d",
+      "group": "mask",
+      "sort": 7,
+      "name": "3D cardboard mask",
+      "summary": "A 3D face mask built from connected cardboard pieces.",
+      "final_keys": ["mask_3d"],
+      "availability": "needs_props",
+      "needs": ["Cardboard pieces with face prints", "Tape or glue"],
+      "steps": [
+        "Assemble the pieces into a face-shaped 3D mask.",
+        "Wear it or hold it in front of your face.",
+        "Look at the camera and turn slightly."
+      ],
+      "dos": ["Make sure the face is recognisable"],
+      "donts": ["Don't use a single flat piece (that's Photo cut-out mask)"],
+      "confused_with": ["cutout_mask"]
+    },
+    {
+      "key": "latex_mask",
+      "group": "mask",
+      "sort": 8,
+      "name": "Latex mask",
+      "summary": "A stretchy rubber mask shaped like a face.",
+      "final_keys": ["latex_mask"],
+      "availability": "special",
+      "needs": ["A latex face mask"],
+      "steps": [
+        "Put the mask on.",
+        "Look at the camera and move your head slightly.",
+        "Keep the mask in place for the whole recording."
+      ],
+      "dos": ["Use good, even lighting"],
+      "donts": ["Don't use a mask that only covers the eyes"],
+      "confused_with": ["silicone_mask"]
+    },
+    {
+      "key": "silicone_mask",
+      "group": "mask",
+      "sort": 9,
+      "name": "Silicone mask",
+      "summary": "A very realistic, skin-like mask.",
+      "final_keys": ["silicon_mask"],
+      "availability": "special",
+      "needs": ["A silicone face mask"],
+      "steps": [
+        "Put the mask on.",
+        "Look at the camera and move your head slightly.",
+        "Keep the mask in place for the whole recording."
+      ],
+      "dos": ["Use good, even lighting"],
+      "donts": ["Don't use a rubber party mask (that's Latex mask)"],
+      "confused_with": ["latex_mask"]
+    }
+  ],
+  "special_choices": [
+    { "key": "not_sure", "name": "Not sure", "summary": "I'm not sure which one this is." }
+  ]
+}
